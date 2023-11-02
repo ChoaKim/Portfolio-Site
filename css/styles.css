@@ -1,6 +1,6 @@
 p {
-    color: red;
-    font-size: 24px;
+    color: #333333;
+    font-size: 16px;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     /* Sets the font weight to 300 */
     line-height: 1.6;
     /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
+    color: #333333;
 }
 
 h1,h2,h3,h4 {
@@ -44,7 +44,7 @@ img {
 }
 
 a {
-    color: #ff7f50;
+    color: #333333;
     text-decoration: none;
     /* No underlining */
 }
