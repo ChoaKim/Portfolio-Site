@@ -1,6 +1,39 @@
+header {
+    background-color: #ffe4c4;
+    text-align: center;
+    padding: 10px 0;
+    /* margin: 10px; */
+    /* border-bottom: 3px solid #4a4a4a; */
+    width: [object Object]px;
+    height: [object Object]px;
+    background: #ffe4c4;
+    border: solid #ffe4c4 1px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#hero {
+    background-color: #ffe4c4;
+}
+
+#hero h1 {
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+/* main {
+    padding-top: 133px;
+  } */
+
 p {
     color: #333333;
     font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -15,7 +48,10 @@ body {
     color: #333333;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     line-height: 1.4;
 }
 
@@ -84,3 +120,73 @@ a {
     background-color: #38342D;
     color: #ffffff;
 }
+
+/* Layout styling */
+
+.container {
+    padding: 0 25px 25px 25px;
+}
+
+.row {
+    margin: 25px 0;
+    padding-bottom: 25px;
+}
+
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+#project1 .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+#about .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+} 
+
+#hero h1 {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* .center {
+    text-align:center;
+} */
+
+/* header naviation*/
+
+.logo {
+    max-width: 250px;
+}
+
+.social_media_icon {
+    max-width: 100px;
+}
+
+.picture {
+max-width: 250px;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+/* need to create each button status(visited, hover, active and visited) */

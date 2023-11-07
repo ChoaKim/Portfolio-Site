@@ -15,13 +15,10 @@
 
 <body>
     <header id="navtigation">
-        <div>
-            <picture>
-                <source srcset="img/homepage/website-icon.jpg" media="(max-width:767px)">
-                <img src="img/homepage/website-icon.jpg" alt="logo">
-            </picture>
+        <div class="container">
+            <img class="logo" src="img/homepage/website-icon.jpg" alt="logo">
             <nav>
-                <ul>
+                <ul class="navtigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -31,57 +28,52 @@
     </header>
     <main>
         <div id="hero">
-            <div>
+            <div class="container">
                 <h1>Hi, my name is Choa Kim.</h1>
                 <span>I'm a UX designer based in the UK</span>
                 <p>Passionate about learning real insights from user research and finding effective and creative
                     solutions for users and businesses. A huge dog lover with a drive to create positive impacts.</p>
             </div>
         </div>
-        <div id="work">
-            <div>
+        <div id="work"><!-- work section -->
+            <div class="container">
                 <h2>My work</h2>
-                <div>
-                    <div>
-                        <h3>Project 1</h3>
-                        <picture>
-                            <source srcset="img/homepage/thumbnail-for-project1.png" media="(max-width:767px)">
-                            <img src="img/homepage/thumbnail-for-project1.png" alt="project1">
-                        </picture>
-                        <h3>Olive: A health app that fits into your daily life</h3>
-                        <p>A study found that lack of motivation (38%) and feeling tired (35%) are the main reasons UK
-                            adults
-                            struggle to manage their health. However, no need to spare time separately for a health
-                            management with Olive.
-                        </p>
-                        <a href="project1.html" class="button">Read more</a>
-                    </div>
+                <div class="row">
+                    <h3>Project 1</h3>
+                    <picture>
+                        <source srcset="img/homepage/thumbnail-for-project1.png" media="(max-width:767px)">
+                        <img src="img/homepage/thumbnail-for-project1.png" alt="project1">
+                    </picture>
+                    <h3>Olive: A health app that fits into your daily life</h3>
+                    <p>A study found that lack of motivation (38%) and feeling tired (35%) are the main reasons UK
+                        adults
+                        struggle to manage their health. However, no need to spare time separately for a health
+                        management with Olive.
+                    </p>
+                    <a href="project1.html" class="button">Read more</a>
                 </div>
-                <div>
-                    <div>
-                        <h3>Project 2</h3>
-                        <picture>
-                            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                            <img src="http://via.placeholder.com/1200x800" alt="My Image">
-                        </picture>
-                        <h3>A portfolio website that increase chances of getting an interview</h3>
-                        <p>fdsfdsfsdfsdfsdfsdfsdfdsfdsfdsfds
-                        </p>
-                        <a href="#" class="button">Read more</a>
-                    </div>
+                <div class="row">
+                    <h3>Project 2</h3>
+                    <picture>
+                        <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                        <img src="http://via.placeholder.com/1200x800" alt="My Image">
+                    </picture>
+                    <h3>A portfolio website that increase chances of getting an interview</h3>
+                    <p>fdsfdsfsdfsdfsdfsdfsdfdsfdsfdsfds
+                    </p>
+                    <a href="#" class="button">Read more</a>
                 </div>
             </div>
-        </div>
     </main>
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>Do you have an idea? Contact me at choakim[at]gmail(dot)com, or call: phone number goes here
             </p>
             <div>
                 <a href="mailto:choa.linzy@gmail.com" class="button contact">Email me</a>
             </div>
-            <div>
+            <div class="social_media_icon">
                 <a href="https://www.linkedin.com/in/choa-kim-6b5a28184/" target="_blank">
                     <img src="img/social-icons/linkedin.svg" alt="linkedin-icon" />
                 </a>
