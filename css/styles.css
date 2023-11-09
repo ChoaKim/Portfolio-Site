@@ -16,11 +16,16 @@ header {
 
 #hero {
     background-color: #ffe4c4;
+    text-align: center;
 }
 
 #hero h1 {
     margin: 0;
     padding: 0.67em 0;
+}
+
+#hero span {
+    display: block;
 }
 
 /* main {
@@ -145,7 +150,7 @@ a {
 #about .row {
     padding-bottom: 25px;
     border-bottom: 1px solid #4a4a4a;
-} 
+}
 
 #hero h1 {
     text-align: center;
@@ -162,7 +167,7 @@ a {
 /* header naviation*/
 
 .logo {
-    max-width: 250px;
+    max-width: 50px;
 }
 
 .social_media_icon {
@@ -170,7 +175,7 @@ a {
 }
 
 .picture {
-max-width: 250px;
+    max-width: 250px;
 }
 
 nav>ul {
@@ -189,4 +194,36 @@ nav>ul>li>a {
     color: #4a4a4a;
 }
 
-/* need to create each button status(visited, hover, active and visited) */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+.col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
