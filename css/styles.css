@@ -4,14 +4,14 @@ header {
     padding: 10px 0;
     /* margin: 10px; */
     /* border-bottom: 3px solid #4a4a4a; */
-    width: [object Object]px;
-    height: [object Object]px;
     background: #ffe4c4;
     border: solid #ffe4c4 1px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #hero {
@@ -28,9 +28,9 @@ header {
     display: block;
 }
 
-/* main {
+main {
     padding-top: 133px;
-  } */
+}
 
 p {
     color: #333333;
@@ -132,14 +132,26 @@ a {
     padding: 0 25px 25px 25px;
 }
 
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .row {
     margin: 25px 0;
     padding-bottom: 25px;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #work .row {
     padding-bottom: 25px;
-    border-bottom: 1px solid #4a4a4a;
 }
 
 #project1 .row {
@@ -194,6 +206,16 @@ nav>ul>li>a {
     color: #4a4a4a;
 }
 
+.social-media-icons {
+    list-style: none;
+}
+
+.social-media-icons>li {
+    display: inline-block;
+    max-width: 32px;
+    padding-right: 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -208,22 +230,38 @@ Medium devices (640px and larger)
         float: right;
         margin-top: 4px;
     }
+
+    .col-md-6 {
+        width: 50%;
+        padding: 0 10px;
+    }
+    
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    .col-lg-5 {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+        padding: 0 10px;
+    }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
-.col-md-6 {
-    width: 50%;
-  }
-
-  [class*="col-"] {
+[class*="col-"] {
     float: left;
-  }
+}
+
+#about h3 {
+    margin-top: 0;
+}
