@@ -14,12 +14,15 @@
 </head>
 
 <body>
-    <header id="navtigation">
+    <header id="navigation">
         <div class="container">
             <img class="logo" src="img/homepage/website-icon.jpg" alt="logo">
+            <!-- how do I make this text next to the logo?
+            <h3>Choa Kim <span>UX designer</span></h3> -->
             <nav>
-                <ul class="navtigation">
-                    <li><a href="index.html">Work</a></li>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="about.html">About me</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -29,52 +32,35 @@
     <main>
         <div id="hero">
             <div class="container">
-                <h1>Hi, I’m Choa</h1>
-                <span>A UX designer based in Cambridge & London</span>
-                <p>I am a UX designer with a unique blend of marketing creativity and customer service empathy. When I
-                    worked as a customer advisor at a fashion company, I discovered a love for creating user-centred
-                    digital experiences that can benefit both businesses and users.
-                    With a background in this human-centred approach, I bring creativity, empathy, and problem-solving
-                    skills to my work. My motivation is to create products that help people spend less time on tasks,
-                    encouraging them to return for joy and learning.
-                    Looking forward to making a positive impact through my UX design endeavours!
-                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="profile-picture-homepage" src="img/homepage/image-profile-background-beige.PNG">
+                        <!-- how to put a box below this image? I want to put Linkedin image -->
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="inline-header">Hi, I'm <span class="highlight-text">Choa!</span></h1>
+                        </br>
+                        <span>A UX designer based in Cambridge & London</span>
+                        <div class="container">
+                            <a href="projects.html" class="my-button">Projects</a>
+                            <a href="about.html" class="my-button">About Me</a>
+                            <p>I am a UX designer with a unique blend of marketing creativity and customer service
+                                empathy.
+                                When I worked as a customer advisor at a fashion company, I discovered a love for
+                                creating
+                                user-centered digital experiences that can benefit both businesses and users. With a
+                                background in this human-centered approach, I bring creativity, empathy, and
+                                problem-solving
+                                skills to my work. My motivation is to create products that help people spend less time
+                                on
+                                tasks, encouraging them to return for joy and learning. Looking forward to making a
+                                positive
+                                impact through my UX design endeavors!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="work">
-            <div class="container">
-                <h2>My work</h2>
-                <div class="row">
-                    <!-- column 1 -->
-                    <div class="column col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/homepage/thumbnail-for-project1.png" media="(max-width:767px)">
-                            <img src="img/homepage/thumbnail-for-project1.png" alt="project1">
-                        </picture>
-                    </div>
-                    <!-- column 2 -->
-                    <div class="column col-md-6 col-lg-5">
-                        <h3>Olive: A health app that fits into your daily life</h3>
-                        <p>A study found that lack of motivation (38%) and feeling tired (35%) are the main reasons UK
-                            adults struggle to manage their health. However, no need to spare time separately for health
-                            management with Olive.</p>
-                        <a href="project1.html" class="button">Read more</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                            <img src="http://via.placeholder.com/1200x800" alt="My Image">
-                        </picture>
-                    </div>
-                    <div class="column col-md-6 col-lg-5">
-                        <h3>A portfolio website that increases chances of getting an interview</h3>
-                        <p>fdsfdsfsdfsdfsdfsdfsdfdsfdsfdsfds</p>
-                        <a href="#" class="button">Read more</a>
-                    </div>
-                </div>
-            </div>
     </main>
     <footer id="contact">
         <div class="container">
