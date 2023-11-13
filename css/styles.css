@@ -1,22 +1,23 @@
 header {
-    background-color: #ffe4c4;
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    /* margin: 10px; */
-    /* border-bottom: 3px solid #4a4a4a; */
-    background: #ffe4c4;
-    border: solid #ffe4c4 1px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     top: 0;
+    height: 150px;
 }
 
 #hero {
-    background-color: #ffe4c4;
+    background-color: #ffffff;
     text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* height: 550px; */
+    /* Remove the height property */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
 }
 
 #hero h1 {
@@ -24,12 +25,13 @@ header {
     padding: 0.67em 0;
 }
 
-#hero span {
+/* #hero span {
     display: block;
-}
+} */
 
 main {
-    padding-top: 133px;
+    padding-top: 180px;
+    padding-bottom: 150px;
 }
 
 p {
@@ -90,40 +92,26 @@ a {
     /* No underlining */
 }
 
-.button {
-    display: inline-block;
-    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #FFD700;
+a.my-button {
+    background-color: #ffd700;
     color: #333333;
-    /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #FFD700;
-    /* width of the border, type, color */
-    transition: 0.2s opacity;
-}
-
-.button:hover {
-    opacity: 0.8;
-    /* Reduces the opacity of the button to 80% */
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
     text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #f3f3f3;
+    border-radius: 20px;
+    display: inline-block;
 }
 
-.button.contact {
-    background-color: transparent;
-    color: #524D42;
-    border: 2px solid #524D42;
+a.my-button:hover {
+    background-color: #ffdb51;
 }
 
-.button.contact:hover {
-    background-color: #524D42;
-    color: #ffffff;
-}
-
-.button.contact:active {
-    background-color: #38342D;
-    color: #ffffff;
+a.my-button:active {
+    transform: scale(0.95);
 }
 
 /* Layout styling */
@@ -136,7 +124,7 @@ a {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .row {
     margin: 25px 0;
@@ -176,18 +164,26 @@ a {
     text-align:center;
 } */
 
-/* header naviation*/
+/* header navigation*/
 
 .logo {
-    max-width: 50px;
+    max-width: 100px;
+    justify-content: flex-start;
 }
 
 .social_media_icon {
-    max-width: 100px;
+    max-width: 90px;
 }
 
 .picture {
     max-width: 250px;
+}
+
+.profile-picture-homepage {
+    max-width: 80%;
+    /* Adjust the percentage as needed */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 nav>ul {
@@ -216,6 +212,8 @@ nav>ul>li>a {
     padding-right: 10px;
 }
 
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -235,7 +233,6 @@ Medium devices (640px and larger)
         width: 50%;
         padding: 0 10px;
     }
-    
 }
 
 /* ==============================
@@ -243,7 +240,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
     .col-lg-5 {
-        width: 50%;
+        width: 41.67%;
         padding: 0 10px;
     }
 
@@ -264,4 +261,61 @@ X-large devices (1440px or larger)
 
 #about h3 {
     margin-top: 0;
+}
+
+.inline-header {
+    display: inline-block;
+}
+
+.highlight-text {
+    background-color: #FFD700;
+    font-family: 'Your_Font', sans-serif;
+}
+
+.animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
