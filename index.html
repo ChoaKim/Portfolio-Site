@@ -10,53 +10,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
     <title>Choa Kim, UX designer</title>
 </head>
 
 <body>
-    <header id="navigation">
+    <header id="navtigation">
         <div class="container">
-            <img class="logo" src="img/homepage/website-icon.jpg" alt="logo">
-            <!-- how do I make this text next to the logo?
-            <h3>Choa Kim <span>UX designer</span></h3> -->
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- change the nav to center -->
+            <div class="navtoggle" id="myNavtoggle">
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <div id="hero">
             <div class="container">
+                <img src="img/homepage/hero.svg" alt="profile">
+                <!-- add animation in css -->
+                <!-- how to use the portfolio, about me button -->
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1>Let's have a look at my <span>portfolio</span></h1>
+                </div>
+                <div class="col-lg-5">
+                    <a href="projects.html" class="my-button">See All</a>
+                </div>
+                <!-- button moves to center -->
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="profile-picture-homepage" src="img/homepage/image-profile-background-beige.PNG">
-                        <!-- how to put a box below this image? I want to put Linkedin image -->
+                        <img src="img/homepage/thumbnail-for-olive.png" alt="olive-picture">
+                        <!-- button carousel -->
+                        <h2>A health app that fits into your daily life</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a
+                            dignissim.
+                            Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="col-md-6">
-                        <h1 class="inline-header">Hi, I'm <span class="highlight-text">Choa!</span></h1>
-                        </br>
-                        <span>A UX designer based in Cambridge & London</span>
-                        <div class="container">
-                            <a href="projects.html" class="my-button">Projects</a>
-                            <a href="about.html" class="my-button">About Me</a>
-                            <p>I am a UX designer with a unique blend of marketing creativity and customer service
-                                empathy.
-                                When I worked as a customer advisor at a fashion company, I discovered a love for
-                                creating
-                                user-centered digital experiences that can benefit both businesses and users. With a
-                                background in this human-centered approach, I bring creativity, empathy, and
-                                problem-solving
-                                skills to my work. My motivation is to create products that help people spend less time
-                                on
-                                tasks, encouraging them to return for joy and learning. Looking forward to making a
-                                positive
-                                impact through my UX design endeavors!</p>
-                        </div>
+                        <img src="img/homepage/thumbnail-for-olive.png" alt="olive-picture">
+                        <!-- button carousel -->
+                        <h2>A health app that fits into your daily life</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a
+                            dignissim.
+                            Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
@@ -64,32 +70,19 @@
     </main>
     <footer id="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Do you have an idea? Contact me at choakim[at]gmail(dot)com, or call: phone number goes here
-            </p>
-            <div>
-                <a href="mailto:choa.linzy@gmail.com" class="button contact">Email me</a>
+            <div class="col-md-6">
+                <a href="mailto:choa.linzy@gmail.com" class="my-button">Email me</a>
             </div>
-            <ul class="social-media-icons">
-                <li>
-                    <a href="https://www.linkedin.com/in/choa-kim-6b5a28184/" target="_blank">
-                        <img src="img/social-icons/linkedin.svg" alt="linkedin-icon" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=en" target="_blank">
-                        <img src="img/social-icons/twitter.svg" alt="twitter-icon" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/choa.linzy/" target="_blank">
-                        <img src="img/social-icons/instagram.svg" alt="instagram-icon" />
-                    </a>
-                </li>
-            </ul>
+            <div class="col-md-6">
+                <a href="https://www.linkedin.com/in/choa-kim-6b5a28184/" target="_blank">
+                    <img class="social-media-icons" src="img/social-icons/linkedin.svg" alt="linkedin-icon" />
+                </a>
+            </div>
             <p>Copyright Choa Kim 2023</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
