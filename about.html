@@ -3,140 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>About Choa Kim</title>
+    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
+    <title>Choa Kim, UX designer</title>
 </head>
 
 <body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
-        <title>Choa Kim, UX designer</title>
-    </head>
-    
-    <body>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" type="text/css"
-                href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-            <link rel="stylesheet" type="text/css" href="css/styles.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
-            <title>Choa Kim, UX designer</title>
-        </head>
-        
-        <body>
-            <header id="navtigation">
-                <div class="container">
-                    <!-- change the nav to center -->
-                    <div class="navtoggle" id="myNavtoggle">
-                        <nav>
-                            <ul class="navigation">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="about.html">About me</a></li>
-                                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                            class="fas fa-bars"></i></a></li>
-                            </ul>
-                        </nav>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="about.html">About me</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                        class="fas fa-bars"></i></a></li>
+                            <!-- menu is not showing when it is default -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- about section -->
+        <div id="about-intro">
+            <div class="container">
+                <h1>About me</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <picture>
+                            <img class="about-intro-img" src="img/about-me/profile-400.png" alt="profile-image">
+                        </picture>
+                    </div>
+
+                    <div class="col-lg-6-1">
+                        <p>Hello! 🌟 Annyeonghaseyo (안녕하세요!), which means "hello" in Korean. I moved to England because
+                            of my childhood favourite drama, Doctor Who.
+                        </p>
+                        <p>
+                            My first job in the UK was as a customer service advisor. While working this role, I
+                            discovered that users easily feel frustrated due to a single error message or the placement
+                            of a promotion box. This realisation sparked my interest in user experience design,
+                            prompting me to transition into the role of a product designer. <i>I actively addressed users'
+                            challenges, reporting approximately 80 issues to various teams, including the product design
+                            team. One of the suggestions I made was to improve the visibility of the promotion code box,
+                            either by changing the wording to make it clearer or by using a more noticeable colour or
+                            button design.</i>
+                        </p>
+                        <p>
+                            My motivation is to create a product that satisfies both users and businesses. I aim to
+                            create a product that encourages users to return by focusing on the joy and convenience they
+                            experience while using the platform. Through this, I seek to attract new users and retain
+                            existing ones.
+                        </p>
+                        <p>
+                            In my free time, I enjoy rewatching "The Lord of the Rings" for the 20 times with my
+                            husband while patting our puppy spaniel, Gimli.
+                        </p>
+                        <a href="files/resume - choa.pdf" class="my-button">Download my CV</a>
                     </div>
                 </div>
-            </header>
-    <main id="about">
-        <div class="container">
-            <h1>About me</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/about-me/profile.png" alt="profile-picture">
-                </div>
-
-                <div class="col-md-6">
-                    <p>Hello! 🌟 Annyeonghaseyo (안녕하세요!), which means "hello" in Korean. I moved to England because of
-                        my
-                        childhood favourite drama, Doctor Who. While working as a customer advisor at a fashion company
-                        in
-                        the
-                        UK, I discovered my passion for creating user-centred digital experiences that can benefit both
-                        businesses and users.
-                    </p>
-                    <p>
-                        I recognise the common threads between my past experiences in marketing and customer service and
-                        UX
-                        design: creating products that attract users and enhance their experiences by understanding and
-                        addressing their pain points. With a background in this human-centred approach, I bring
-                        creativity,
-                        empathy, and problem-solving skills to my work. I strive to design experiences that incorporate
-                        aesthetics, functionality, and enjoyment.
-                    </p>
-                    <p>
-                        My motivation is to create products that help people spend less time on tasks, encouraging them
-                        to
-                        return for joy and learning. In my free time, I enjoy rewatching "The Lord of the Rings" for the
-                        20th time with my husband while patting our puppy spaniel, Gimli.
-
-                    </p>
-                    <a href="files/resume - choa.pdf" class="my-button">Download my CV</a>
-                </div>
             </div>
         </div>
-        <div class="container">
-            <h1>Skills&Tools</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Relevant Skills</h3>
-                    <ui>
-                        <li>User-centre design</li>
-                        <li>WIreframing and Prototyping</li>
-                        <li>User interface design</li>
-                        <li>Design system</li>
-                        <li>User research</li>
-                        <li>Responsive design</li>
-                        <li>Frontend basics</li>
-                    </ui>
+        </br>
+        <!-- skills section -->
+        <div id="about-skills-tools">
+            <div class="container">
+                <div>
+                    <h2 id="skills">Skills & Tools</h2>
                 </div>
-                <div class="col-md-6">
-                    <h3>Tools I use</h3>
-                    <ui>
-                        <li>Figma</li>
-                        <li>Marvel</li>
-                        <li>Miro</li>
-                        <li>VScode</li>
-    
-                    </ui>
+                <div class="contact-container">
+                    <div class="skills-list">
+                        <div class="skills-title col-6">
+                            <h5 class="skills-title-h5">UI/UX Design</h5>
+                        </div>
+                        <div class="col-6">
+                            <ui class="skills-ul">
+                                <li>User-centre design</li>
+                                <li>WIreframing and Prototyping</li>
+                                <li>User interface design</li>
+                                <li>Design system</li>
+                                <li>User research</li>
+                                <li>Responsive design</li>
+                                <li>Frontend basics</li>
+                            </ui>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skills-title col-6">
+                            <h5 class="skills-title-h5">UI/UX Design</h5>
+                        </div>
+                        <div class="col-6">
+                            <ui class="skills-ul">
+                                <li>User-centre design</li>
+                                <li>WIreframing and Prototyping</li>
+                                <li>User interface design</li>
+                                <li>Design system</li>
+                                <li>User research</li>
+                                <li>Responsive design</li>
+                                <li>Frontend basics</li>
+                            </ui>
+                        </div>
+                    </div>
+                    <!-- <div class="skills-list">
+                        <div class="skills-title col-6">
+                            <h5 class="skills-title-h5">UI/UX Design</h5>
+                        </div>
+                        <div class="col-6">
+                            <ui class="skills-ul">
+                                <li>User-centre design</li>
+                                <li>WIreframing and Prototyping</li>
+                                <li>User interface design</li>
+                                <li>Design system</li>
+                                <li>User research</li>
+                                <li>Responsive design</li>
+                                <li>Frontend basics</li>
+                            </ui>
+                        </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
     </main>
     <footer id="contact">
         <div class="container">
-            <div class="col-md-6">
-                <a href="mailto:choa.linzy@gmail.com" class="my-button">Email me</a>
+            <div class="contact-copy">
+                <h2>Get in Touch</h2>
+                <p>I'd love to hear from you, whether it's just to say hi or discuss a project!</p>
             </div>
-            <div class="col-md-6">
-                <a href="https://www.linkedin.com/in/choa-kim-6b5a28184/" target="_blank">
-                    <img class="social-media-icons" src="img/social-icons/linkedin.svg" alt="linkedin-icon" />
-                </a>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="contact.html" class="my-button">Email me</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://www.linkedin.com/in/choa-kim-6b5a28184/" target="_blank">
+                        <img class="social-media-icons" src="img/social-icons/linkedin.svg" alt="linkedin-icon">
+                </div>
             </div>
-            <p>Copyright Choa Kim 2023</p>
+            <div class="copywright">
+                <p>Copyright Choa Kim 2023</p>
+            </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
