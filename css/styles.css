@@ -195,11 +195,6 @@ a.my-button:active {
     letter-spacing: -0.3px;
 }
 
-.social-media-icons {
-    min-width: 29px;
-    margin-left: 10px;
-}
-
 /* Layout styling */
 
 
@@ -790,10 +785,6 @@ h1 span {
     padding: 0;
 }
 
-.social-media-icons {
-    list-style: none;
-    max-width: 50px;
-}
 
 hr {
     border: none;
@@ -801,6 +792,11 @@ hr {
     background-color: #959191;
     margin: 100px 0;
 }
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -1037,6 +1033,37 @@ Large devices (1024px or larger)
         justify-items: center;
         grid-column-gap: 52px;
         grid-row-gap: 16px
+    }
+
+    /* footer */
+
+    .contact-list {
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+        padding-right: 10px;
+        display: inline-block;
+
+    }
+
+    #contact.container {
+        text-align: right;
+        padding: 0 15px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hr-contact {
+        border: none;
+        height: 1px;
+        background-color: #959191;
+        margin: 20px 0;
+        text-align: right;
+        padding: 0 15px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
