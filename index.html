@@ -39,21 +39,21 @@
         <div id="home-hero">
             <div class="container">
                 <div id="image-container">
-                    <picture>
-                        <!-- For screens with a minimum width of 640px and larger -->
-                        <source media="(min-width: 640px)" srcset="img/homepage/homepage-hero-800.png"
-                            class="slideshow-image">
-                        <source media="(min-width: 640px)" srcset="img/homepage/homepage-hero2-800.png"
-                            class="slideshow-image hidden">
-                        <source media="(min-width: 640px)" srcset="img/homepage/homepage-hero3-800.png"
-                            class="slideshow-image hidden">
-                        <!-- For screens smaller than 650px (e.g., mobile devices) -->
-                        <img src="img/homepage/hompage-hero-mobile.png" alt="Mobile Image">
+                    <picture class="slideshow-image">
+                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero-800.png">
+                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
+                    </picture>
+                    <picture class="slideshow-image hidden">
+                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero2-800.png">
+                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
+                    </picture>
+                    <picture class="slideshow-image hidden">
+                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero3-800.png">
+                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
                     </picture>
                 </div>
             </div>
         </div>
-        </br>
         <div id="home-projects">
             <div class="container">
                 <div class="work-row">
@@ -85,17 +85,17 @@
                     <!-- project 2 -->
                     <div class="project-row">
                         <div>
-                            <a href="project-portfolio.html">
+                            <a href="project-designsprint.html">
                                 <picture>
-                                    <source media="(max-width:767px)" srcset="img/homepage/homepage-portfolio-400.png">
-                                    <img src="img/homepage/homepage-portfolio-800.png" alt="Portfolio-image">
+                                    <source media="(max-width:767px)" srcset="img/homepage/homepage-sprint-400.png">
+                                    <img src="img/homepage/homepage-sprint-800.png" alt="Sprint-image">
                                 </picture>
                             </a>
                         </div>
                         <div>
-                            <h3>Designing a Portfolio Website with Coding</h3>
+                            <h3>English Learning Website Redesign</h3>
                             <p class="bold-text">
-                                "How might we make a portfolio that increases chances of getting an interview?"
+                                I redesigned the Cambridge University Press & Assessment website wthin 5 days using the design sprint.
                             </p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
     <footer id="contact">
         <div class="container">
             <hr class="hr-contact">
-            <div>
+            <div style="text-align: right;">
                 <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/">Linkedin</a>
                 <a class="contact-list" href="mailto:choa.linzy@gmail.com">Email me</a>
             </div>
