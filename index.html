@@ -1,123 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e6431d435.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Choa Kim, UX designer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About me</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                        class="fas fa-bars"></i></a></li>
-                            <!-- menu is not showing when it is default -->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+                <!-- menu is not showing when it is default -->
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <!-- the hero section -->
-        <div id="home-hero">
-            <div class="container">
-                <div id="image-container">
-                    <picture class="slideshow-image">
-                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero-800.png">
-                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
-                    </picture>
-                    <picture class="slideshow-image hidden">
-                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero2-800.png">
-                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
-                    </picture>
-                    <picture class="slideshow-image hidden">
-                        <source media="(min-width:650px)" srcset="img/homepage/homepage-hero3-800.png">
-                        <img src="img/homepage/hompage-hero-mobile.png" alt="">
-                    </picture>
-                </div>
-            </div>
+      <!-- the hero section -->
+      <div id="home-hero">
+        <div class="container">
+          <div id="image-container">
+            <picture class="slideshow-image">
+              <source
+                media="(min-width:650px)"
+                srcset="img/homepage/homepage-hero-800.png"
+              />
+              <img src="img/homepage/hompage-hero-mobile.png" alt="" />
+            </picture>
+            <picture class="slideshow-image hidden">
+              <source
+                media="(min-width:650px)"
+                srcset="img/homepage/homepage-hero2-800.png"
+              />
+              <img src="img/homepage/hompage-hero-mobile.png" alt="" />
+            </picture>
+            <picture class="slideshow-image hidden">
+              <source
+                media="(min-width:650px)"
+                srcset="img/homepage/homepage-hero3-800.png"
+              />
+              <img src="img/homepage/hompage-hero-mobile.png" alt="" />
+            </picture>
+          </div>
         </div>
-        <div id="home-projects">
-            <div class="container">
-                <div class="work-row">
-                    <div class="col-lg-10">
-                        <h1>Let's have a look at my <span>portfolio</span></h1>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="projects.html" class="work-header-button">See All</a>
-                    </div>
-                </div>
-                <!-- project 1 -->
-                <div class="project-column">
-                    <div class="project-row">
-                        <div>
-                            <a href="project-olive.html">
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="img/homepage/olive-main-400.png">
-                                    <img src="img/homepage/olive-main-800.png" alt="olive-image">
-                                </picture>
-                            </a>
-                        </div>
-                        <div>
-                            <h3>A Health App for Busy People</h3>
-                            <p class="bold-text">
-                                How many times have you decided to go to the gym and ended up lying in bed watching
-                                Netflix? </p>
-                        </div>
-                    </div>
-                    <!-- project 2 -->
-                    <div class="project-row">
-                        <div>
-                            <a href="project-designsprint.html">
-                                <picture>
-                                    <source media="(max-width:767px)" srcset="img/homepage/homepage-sprint-400.png">
-                                    <img src="img/homepage/homepage-sprint-800.png" alt="Sprint-image">
-                                </picture>
-                            </a>
-                        </div>
-                        <div>
-                            <h3>English Learning Website Redesign</h3>
-                            <p class="bold-text">
-                                I redesigned the Cambridge University Press&Assessment website wthin 5 days using the design sprint.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div id="home-projects">
+        <div class="container">
+          <div class="work-row">
+            <div class="col-lg-10">
+              <h1>Let's have a look at my <span>portfolio</span></h1>
             </div>
+            <div class="col-lg-2">
+              <a href="projects.html" class="work-header-button">See All</a>
+            </div>
+          </div>
+          <!-- project 1 -->
+          <div class="project-column">
+            <div class="project-row">
+              <div>
+                <a href="project-olive.html">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="img/homepage/olive-main-400.png"
+                    />
+                    <img
+                      src="img/homepage/olive-main-800.png"
+                      alt="olive-image"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <h3>A Health App for Busy People</h3>
+                <p class="bold-text">
+                  How many times have you decided to go to the gym and ended up
+                  lying in bed watching Netflix?
+                </p>
+              </div>
+            </div>
+            <!-- project 2 -->
+            <div class="project-row">
+              <div>
+                <a href="project-designsprint.html">
+                  <picture>
+                    <source
+                      media="(max-width:767px)"
+                      srcset="img/homepage/homepage-sprint-400.png"
+                    />
+                    <img
+                      src="img/homepage/homepage-sprint-800.png"
+                      alt="Sprint-image"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <h3>English Learning Website Redesign</h3>
+                <p class="bold-text">
+                  I redesigned the Cambridge University Press&Assessment website
+                  wthin 5 days using the design sprint.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <hr class="hr-contact">
-            <div style="text-align: right;">
-                <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/">Linkedin</a>
-                <a class="contact-list" href="mailto:choa.linzy@gmail.com">Email me</a>
-            </div>
-            <div class="copywright">
-                <p>Copyright Choa Kim 2023</p>
-            </div>
+      <div class="container">
+        <hr class="hr-contact" />
+        <div style="text-align: right">
+          <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/"
+            >Linkedin</a
+          >
+          <a class="contact-list" href="mailto:choa.linzy@gmail.com"
+            >Email me</a
+          >
         </div>
+        <div class="copywright">
+          <p>Copyright Choa Kim 2023</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
