@@ -1,135 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e6431d435.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Choa Kim, UX designer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About me</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                        class="fas fa-bars"></i></a></li>
-                            <!-- menu is not showing when it is default -->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+                <!-- menu is not showing when it is default -->
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <!-- about section -->
-        <div id="about-intro">
-            <div class="container">
-                <h1>About me</h1>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <picture>
-                            <img class="about-intro-img" src="img/about-me/profile-400.png" alt="profile-image">
-                        </picture>
-                    </div>
-
-                    <div class="col-lg-6-1">
-                        <p>Hello! 🌟 Annyeonghaseyo (안녕하세요!), which means "hello" in Korean. I moved to England because
-                            of my childhood favourite drama, Doctor Who.
-                        </p>
-                        <p>
-                            My first job in the UK was as a customer service advisor. While working this role, I
-                            discovered that users easily feel frustrated due to a single error message or the placement
-                            of a promotion box. This realisation sparked my interest in user experience design,
-                            prompting me to transition into the role of a product designer. <i>I actively addressed
-                                users'
-                                challenges, reporting approximately 80 issues to various teams, including the product
-                                design
-                                team. One of the suggestions I made was to improve the visibility of the promotion code
-                                box,
-                                either by changing the wording to make it clearer or by using a more noticeable colour
-                                or
-                                button design.</i>
-                        </p>
-                        <p>
-                            My motivation is to create a product that satisfies both users and businesses. I aim to
-                            create a product that encourages users to return by focusing on the joy and convenience they
-                            experience while using the platform. Through this, I seek to attract new users and retain
-                            existing ones.
-                        </p>
-                        <p>
-                            In my free time, I enjoy rewatching "The Lord of the Rings" for the 20 times with my
-                            husband while patting our puppy spaniel, Gimli.
-                        </p>
-                        <a href="img/about-me/cv-choa-kim.pdf" class="my-button">Download my CV</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <!-- about section -->
+      <div id="about-intro">
         <div class="container">
-        </div>
-        <!-- skills section -->
-        <div class="about-intro">
-            <div class="container">
-                <h2 id="skills" class="text-align-center">Skills&Tools</h2>
-                <div class="row">
-                    <div class="col-md-6 text-align-center">
-                        <h5 class="skills-title-h5">Skills 👩🏻‍💻</h5>
-                        <ul class="skills-ul">
-                            <li>User-centre design</li>
-                            <li>WIreframing and Prototyping</li>
-                            <li>User interface design</li>
-                            <li>Design system</li>
-                            <li>User research</li>
-                            <li>Responsive design</li>
-                            <li>Frontend basics</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 text-align-center">
-                        <h5 class="skills-title-h5">Tools 🛠️</h5>
-                        <ul class="skills-ul">
-                            <li>Figma</li>
-                            <li>Photoshop</li>
-                            <li>Miro</li>
-                            <li>Zoom</li>
-                            <li>Notion</li>
-                            <li>Slack</li>
-                            <li>VScode</li>
-                            <li>Github</li>
-                        </ul>
-                    </div>
-                </div>
+          <h1>About me</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <picture>
+                <img
+                  class="about-intro-img"
+                  src="img/about-me/profile-400.png"
+                  alt="profile-image"
+                />
+              </picture>
             </div>
+
+            <div class="col-lg-6-1">
+              <p>
+                Hello! 🌟 Annyeonghaseyo (안녕하세요!), which means "hello" in
+                Korean. I moved to England because of my childhood favourite
+                drama, Doctor Who.
+              </p>
+              <p>
+                My first job in the UK was as a customer service advisor. While
+                working this role, I discovered that users easily feel
+                frustrated due to a single error message or the placement of a
+                promotion box. This realisation sparked my interest in user
+                experience design, prompting me to transition into the role of a
+                product designer.
+                <i
+                  >I actively addressed users' challenges, reporting
+                  approximately 80 issues to various teams, including the
+                  product design team. One of the suggestions I made was to
+                  improve the visibility of the promotion code box, either by
+                  changing the wording to make it clearer or by using a more
+                  noticeable colour or button design.</i
+                >
+              </p>
+              <p>
+                My motivation is to create a product that satisfies both users
+                and businesses. I aim to design products that help people to
+                feel joy and convenience. Through this, I can attract new users
+                and retain existing ones.
+              </p>
+              <p>
+                In my free time, I enjoy rewatching "The Lord of the Rings" for
+                the 20 times with my husband while patting our puppy spaniel,
+                Gimli.
+              </p>
+              <a href="img/about-me/cv-choa-kim.pdf" class="my-button"
+                >Download my CV</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container"></div>
+      <!-- skills section -->
+      <div class="about-intro">
+        <div class="container">
+          <h2 id="skills" class="text-align-center">Skills&Tools</h2>
+          <div class="row">
+            <div class="col-md-6 text-align-center">
+              <h5 class="skills-title-h5">Skills 👩🏻‍💻</h5>
+              <ul class="skills-ul">
+                <li>User-centre design</li>
+                <li>WIreframing and Prototyping</li>
+                <li>User interface design</li>
+                <li>Design system</li>
+                <li>User research</li>
+                <li>Responsive design</li>
+                <li>Frontend basics</li>
+              </ul>
+            </div>
+            <div class="col-md-6 text-align-center">
+              <h5 class="skills-title-h5">Tools 🛠️</h5>
+              <ul class="skills-ul">
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Miro</li>
+                <li>Zoom</li>
+                <li>Notion</li>
+                <li>Slack</li>
+                <li>VScode</li>
+                <li>Github</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <hr class="hr-contact">
-            <div style="text-align: right;">
-                <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/">Linkedin</a>
-                <a class="contact-list" href="mailto:choa.linzy@gmail.com">Email me</a>
-            </div>
-            <div class="copywright">
-                <p>Copyright Choa Kim 2023</p>
-            </div>
+      <div class="container">
+        <hr class="hr-contact" />
+        <div style="text-align: right">
+          <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/"
+            >Linkedin</a
+          >
+          <a class="contact-list" href="mailto:choa.linzy@gmail.com"
+            >Email me</a
+          >
         </div>
+        <div class="copywright">
+          <p>Copyright Choa Kim 2023</p>
+        </div>
+      </div>
     </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
