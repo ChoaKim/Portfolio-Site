@@ -1,62 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e6431d435.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Choa Kim, UX designer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About me</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                        class="fas fa-bars"></i></a></li>
-                            <!-- menu is not showing when it is default -->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
-        <main id="project-olive">
-            <div class="container">
-                <picture>
-                    <source srcset="img/portfolio/portfolio-hero-400.png" media="(max-width:767px)">
-                    <img src="img/portfolio/portfolio-hero-800.png" alt="olive-overview">
-                </picture>
-            </div>
+    <main id="project-olive">
+      <div class="container">
+        <picture>
+          <source
+            srcset="img/portfolio/portfolio-hero-400.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/portfolio/portfolio-hero-800.png"
+            alt="olive-overview"
+          />
+        </picture>
+        <div class="row">
+          <div>
+            <h2>Overview</h2>
+          </div>
+          <div>
+            <p>
+              While I was learning coding, I decided to create my own portfolio
+              website. I aimed to make a website not only visually appealing but
+              also increase my chances of getting an interview. I conducted an
+              A/B test (result). (I could add a sentence about specific
+              challenges I faced during the project or a key feature I
+              incorporated into my portfolio to make it unique.)
+            </p>
+            <p>
+              #
+            </p>
+          </div>
+        </div>
+        <hr />
+        <!-- challenge -->
+        <div class="row">
+          <div>
+            <img
+              src="img/sprint/sprint-original-website-800.png"
+              alt="sprint-original"
+            />
+            <h2>
+              Have you ever visited the Cambridge University Press & Assessment
+              for learning English?
+            </h2>
+            <p>
+              Unfortunately, this was my first time visiting the website, and I
+              wasn't aware that they offered free learning resources. If I had
+              known, I could have utilised these resources when I was studying
+              for the IELTS! While browsing the website, I identified areas that
+              could be improved for a better user experience.
+            </p>
+
+            <p>
+              My challenge was to create a new Learning English page. The
+              website offers various learning resources for learners, teachers,
+              and organisations for free, which is excellent. However, the
+              resources are currently organised in a somewhat random order,
+              making it difficult to find specific ones. My goal is to ensure
+              that the page is user-friendly, allowing learners to effortlessly
+              discover resources that match their learning objectives.
+              Additionally, I aim to help users stay motivated so they can
+              continue improving their English skills.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- problem -->
+            <h2>Problem 🤔</h2>
+            <p style="font-size: 16px">
+              Users want to improve their English skills for variouse reasons
+              such as "I want to have a forniener friend" or "I want to know
+              more about Harry Potter" or "I want to improve it for getting a
+              better job".
+              <br />
+              <br />
+              However, due to a lack of motivation and difficulty in finding a
+              learning resource they want to learn or use, it is difficult for
+              them to make progress.
+            </p>
+          </div>
+          <!-- solution -->
+          <div class="col-md-6">
+            <h2>Solution 💡</h2>
+            <ul>
+              <li>
+                <b>1. Search bar:</b> Add a search bar for easy identification
+                of resources aligned with their learning goals (e.g., travel
+                English, business English, entertainment) on the main page.
+              </li>
+              <li>
+                <b>2. Advanced filters:</b> Add the most popular interests as a
+                main filter, allowing users to discover resources that match
+                their learning goals.
+              </li>
+              <li>
+                <b>3. Engaging learning contents:</b> Introduce contents related
+                to their common learning goals, enhancing the enjoyment of the
+                learning experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="img/sprint/sprint-solution-1.png" alt="sprint-original" />
+        <br />
+        <img src="img/sprint/sprint-solution-2.png" alt="sprint-original" />
+        <hr />
+        <!-- design process -->
+        <div class="row">
+          <h2>Design Process 👩🏻‍💻</h2>
+          <p>
+            ✨ Here's how I ran the solo-sprint, where I diverged from the
+            Sprint book, what worked well, and where I went astray. Before I
+            started the design sprint, I had a quick research about the
+            organisation and conducted a user survey so I can have clear goals
+            and objectives for the design sprint.
+          </p>
+          <!-- Monday -->
+          <div class="row">
+            <h3>
+              1️⃣ Monday: Understand the problem, map it out and choose a target
+            </h3>
+            <p>
+              Analysing the data from the user survey and conducting in-depth
+              research about the organisation helped me define the problem and
+              set a clear goal for the project. As it was my first day of the
+              design sprint, I wasn't 100% sure whether I was on the right
+              track. However, I used the book as a guide and completed the tasks
+              one by one.
+            </p>
+            <h4 style="margin: 10px 0; font-weight: bold">
+              By the end of the day, I had determined the following:
+            </h4>
+            <img src="img/sprint/sprint-monday.png" alt="sprint-book" />
+          </div>
+          <!-- Tuesday -->
+          <div class="row">
+            <h3>2️⃣ Tuesday: Sketch competing solutions</h3>
+            <p>
+              I reviewed the features that were effective for competitive
+              analysis, confirmed their applicability to our website, and
+              followed a four-step sketching process (Gather information → Write
+              down ideas → Crazy 8 → Storyboard). Utilising Crazy 8, I sketched
+              three ideas and, after careful consideration, created storyboards
+              for two. While in a typical sprint, one might choose the best idea
+              for a storyboard, in this solo sprint, my goal was to generate and
+              narrow down as many ideas as possible.
+            </p>
+            <img src="img/sprint/sprint-sketches.png" alt="sprint-sketches" />
+          </div>
+          <!-- Wednesday -->
+          <div class="row">
+            <h3>3️⃣ Wednesday: Decide on the best</h3>
+            <p>
+              In the morning, I conducted a thorough review of the storyboards,
+              critiquing each idea to assess strengths, areas for improvement,
+              and elements that weren't working. Once I selected the concept, I
+              expanded the storyboard to create a more comprehensive user
+              journey, laying the groundwork for tomorrow's task of developing a
+              prototype.
+              <span>
+                Given the solo nature of the sprint, decision-making was
+                expedited since there weren't extensive discussions or multiple
+                ideas to consider. To compensate for the absence of team
+                members, I simulated discussions by engaging with Chat GPT as if
+                they were colleagues. This exercise not only allowed for
+                constructive criticism but also led to the discovery of valuable
+                ideas. Critiquing and developing ideas through this process was
+                enlightening, and I look forward to future discussions with real
+                people in my next project.</span
+              >
+            </p>
+            <img src="img/sprint/sprint-img.png" alt="sprint-whiteboard" />
+          </div>
+          <!-- Thursday -->
+          <div class="row">
+            <h3>4️⃣ Thursday: Build a realistic prototype</h3>
+            <p>
+              To begin the day, I crafted a low-fidelity wireframe to examine
+              the layout and alignment, closely mimicking the structure of the
+              current website. My coding skills enabled me to precisely
+              replicate elements, from fonts to paddings, while ensuring
+              adherence to the organisation’s colour theme and style. I
+              transitioned to the high-fidelity stage and sent reminder emails
+              to participants for user testing.
+            </p>
+            <img src="img/sprint/sprint-mockup.png" alt="prototype" />
+          </div>
+          <!-- Friday -->
+          <div class="row">
+            <h3>5️⃣ Friday: Test with target users</h3>
+            <p>
+              I conducted user testing with 5 participants. My goal for user
+              testing was to see whether the website is easy to navigate and
+              whether users find a advanced filter useful (is it helpful to find
+              a right resources that meet their learning goals?).
+            </p>
+            <img src="img/sprint/sprint-findings.png" alt="sprint-finidings" />
+            <p>
+              Unfortunately, my hypothesis regarding user behaviour when
+              choosing a learning resource did not align with their actual
+              behaviour. From the research stage, I discovered that people have
+              various reasons to learn English and these motivations are not
+              improving their grammar or listening skills. The reasons behind is
+              that they want to have a new foreigner friend, want to know about
+              their favourite movies and for their career. Their ultimate goal
+              for learning English is not certainly improving a listening skill.
+              To address this, I aimed to add the interest in filters so users
+              could learn to achieve their learning goals. However, users didn’t
+              think about their ultimate goals when they try to choose a
+              learning resource.
+            </p>
+            <img
+              src="img/sprint/sprint-usertesting.png"
+              alt="sprint-usertesting"
+            />
+            <h4>
+              <b>As a result, I have updated the prototype the following:</b>
+            </h4>
+            <ul>
+              <li>
+                1. Learning tip: Added a sentence encouraging users to remember
+                their learning goals when selecting a learning activity.
+              </li>
+              <li>
+                2. Search bar: Included a search bar for easy identification of
+                resources aligned with their learning goals (e.g., travel
+                English, business English, entertainment).
+              </li>
+              <li>
+                3. Advanced filters: Added the most popular interests as a main
+                filter, allowing users to discover resources that match their
+                learning goals.
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <!-- What I learnt & Next steps  -->
+          <div class="row">
+            <h2>What I Learnt 🌱</h2>
+            <p>
+              <b>The Design Sprint:</b> Through this project, I have gained a
+              strong understanding of the design thinking process and how to
+              apply it to complex problems. Every technique in the design sprint
+              proved beneficial, and one of my favourites is the 4-step design
+              sketch. This method helped me to swiftly visualise ideas,
+              facilitating the identification of improvements and errors in the
+              process.
+            </p>
+
+            <p>
+              <b>Collaborative Problem-Solving:</b> The importance of
+              collaboration became evident during moments of creative block.
+              Whenever I faced with challenges or a mental roadblock, I had a
+              brainstorming session with my husband. This collaborative effort
+              not only sparked new ideas but also served as a constructive means
+              to identify improvements and detect errors. The power of
+              collaboration, especially in overcoming mental hurdles, was a
+              significant revelation during this case study.
+            </p>
+          </div>
+          <div class="row" style="padding-bottom: 0">
+            <h2>Next Steps ⏭️</h2>
+            <p>
+              <b>Solving another problem:</b>Through the user survey and user
+              testing, I also found that users prefer offline courses to online
+              courses/activities. The reasons are that they want to interact
+              with people to be motivated and get instant feedback. I would love
+              to tackle this problem: "How might we make online resources more
+              interactive so users enjoy learning online?"
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <hr class="hr-contact">
-            <div style="text-align: right;">
-                <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/">Linkedin</a>
-                <a class="contact-list" href="mailto:choa.linzy@gmail.com">Email me</a>
-            </div>
-            <div class="copywright">
-                <p>Copyright Choa Kim 2023</p>
-            </div>
+      <div class="container">
+        <hr class="hr-contact" />
+        <div style="text-align: right">
+          <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/"
+            >Linkedin</a
+          >
+          <a class="contact-list" href="mailto:choa.linzy@gmail.com"
+            >Email me</a
+          >
         </div>
+        <div class="copywright">
+          <p>Copyright Choa Kim 2023</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
