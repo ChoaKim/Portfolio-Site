@@ -1,62 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9e6431d435.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e6431d435.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Choa Kim, UX designer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="navtoggle" id="myNavtoggle">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="about.html">About me</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                        class="fas fa-bars"></i></a></li>
-                            <!-- menu is not showing when it is default -->
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
-        <main id="project-olive">
-            <div class="container">
-                <picture>
-                    <source srcset="img/portfolio/portfolio-hero-400.png" media="(max-width:767px)">
-                    <img src="img/portfolio/portfolio-hero-800.png" alt="olive-overview">
-                </picture>
+    <main id="project-portfolio">
+      <div class="container">
+        <picture>
+          <source
+            srcset="img/portfolio/portfolio-hero-400.png"
+            media="(max-width:767px)"
+          />
+          <img
+            src="img/portfolio/portfolio-hero-800.png"
+            alt="olive-overview"
+          />
+        </picture>
+        <div class="row">
+          <div>
+            <h2>Overview</h2>
+          </div>
+          <div>
+            <p>
+              While I was learning coding, I decided to create my own portfolio
+              website. I want to make a website not only visually appealing but
+              also increase my chances of getting an interview.
+            </p>
+            <p>
+              It was challenging to create a website—from user research to
+              actually coding the site. However, this was the most worthwhile
+              project because I learned so many things, such as how a front-end
+              developer works, how to analyse other websites using inspection
+              and understanding what developers need from a designer when
+              creating a product.
+            </p>
+            <p>
+              I conducted user testing with 5 individuals relevant to the UX
+              industry. As a result, they all found it easy to navigate and
+              liked the incorporation of visual elements that reflected my
+              personality. I am excited to test my portfolio while applying for
+              jobs.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- problem -->
+            <h2>Problem 🤔</h2>
+            <p style="font-size: 16px">
+              You often see that almost 100 people apply for the same job on
+              LinkedIn within one week. If we consider people applying from
+              other platforms, how many individuals do you need to compete
+              against?
+              <br />
+              <br />
+              Applying for a job is not equivalent to securing one; it is one of
+              the stages through which individuals can land an interview and
+              progress towards obtaining a job. So,
+              <b
+                >how can we create a portfolio that stands out to hiring
+                managers or design teams, ensuring it won't be dismissed?</b
+              >
+            </p>
+          </div>
+          <!-- solution -->
+          <div class="col-md-6">
+            <h2>Solution 💡</h2>
+            <ul style="padding-left: 0;">
+              <li>
+                <b
+                  >1. Visual elements that showcase my unique personality and
+                  skills:</b
+                >
+                Add visual elements such as emojis and pictures to convey my
+                personality and highlight my visual design skills.
+              </li>
+              <li>
+                <b>2. Differentiation:</b> Include a category (e.g., App Design,
+                Responsive Web Design, etc.) in the project picture, enabling
+                hiring managers to easily recognise my experience and expertise.
+              </li>
+              <li>
+                <b>3. Well-explained thought process:</b> Include a result
+                picture that provides context on why I made specific decisions,
+                using annotations to help people understand easily.
+              </li>
+              <li>
+                <b>4. Storytelling:</b> Incorporate storytelling to explain my
+                thought processes and design approach, following a user-cantered
+                design methodology.
+              </li>
+            </ul>
+          </div>
+          </div>
+        <div id="image-container">
+          <img
+            class="slideshow-image"
+            src="img/portfolio/portfolio-result-mobile.jpg"
+            alt="portfolio-mobile"
+          />
+          <img
+            class="slideshow-image hidden"
+            src="img/portfolio/portfolio-result-desktop.jpg"
+            alt="portfolio-desktop"
+          />
+        </div>
+        <hr />
+        <!-- design process -->
+        <div class="design-intro">
+          <div class="row">
+            <h2>Do you want to know how I made this decision? 👩🏻‍💻</h2>
+            <p>
+              First, as I identified a problem to solve, I started looking into
+              how to make a portfolio that improves the chances of getting an
+              interview. I reviewed other UX designers’ portfolios and talked
+              with experts (6 senior UX designers and 1 recruiter) to understand
+              what they think is crucial when reviewing portfolios.
+            </p>
+            <img
+              src="img/portfolio/portfolio-quote.png"
+              alt="quote-from-expert"
+            />
+            <p>
+              <i
+                >Insight: While there isn’t a portfolio that guarantees
+                employment, there are aspects that make you stand out to
+                increase chances of getting an interview.</i
+              >
+            </p>
+          </div>
+        </div>
+        <!-- reserch -->
+        <div class="row">
+          <h3>🔍 Research: Find possible solutions</h3>
+          <p>
+            Upon analysing the data I gathered, I identified the most crucial
+            aspects for an effective portfolio. Based on these findings, I came
+            up with 2 HMW questions and solutions to have a clear goal.
+          </p>
+          <div>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- HMW question -->
+                <h3>HMW 🤔</h3>
+                <p style="font-size: 16px">
+                  "How might we create a unique portfolio so we can stand out to
+                  hiring managers?"
+                </p>
+              </div>
+              <!-- solution -->
+              <div class="col-md-6">
+                <h3>Solution 💡</h3>
+                <p style="font-size: 16px">
+                  <b>Show your geek:</b> By including pictures and design
+                  elements that naturally reflect your personality and
+                  strengths, you make it simple for employers to understand what
+                  sets you apart.
+                </p>
+              </div>
             </div>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- HMW question -->
+                <h3>HMW 🤔</h3>
+                <p style="font-size: 16px">
+                  "How might we explain thought processes and design processes
+                  so everyone can understand the process?"
+                </p>
+              </div>
+              <!-- solution -->
+              <div class="col-md-6">
+                <h3>Solution 💡</h3>
+                <p style="font-size: 16px">
+                  <b>Adding Intonation:</b> Even with before-and-after images,
+                  identifying which part has been changed and why we changed is
+                  difficult. By adding intonation the result page, it helps
+                  individuals, including those with limited knowledge of UX
+                  design or those who skim-read, to understand the changes and
+                  the Why more easily.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Define -->
+        <div class="row">
+          <h3>✏️ Sketch: Visualise the ideas</h3>
+          <p>
+            I started to sketch them in order to visualise the design. I then
+            moved to create a low-fi wireframe to make a layout of website.
+          </p>
+          <img src="img/portfolio/portfolio-sketches.png" alt="sketchs" />
+        </div>
+        <!-- Prototype -->
+        <div class="row">
+          <h3>
+            Prototype: Decide the best solutions and create a high-prototype
+          </h3>
+          <p>
+            I chose the best solutions that I wanted to improve and then began
+            coding the website to ensure its responsiveness on all devices.
+            <span>
+              It was difficult to code my prototype design as there were many
+              things I actually couldn’t code such as carousel, drop down menu
+              or accordion etc. Consequently, I had to consistently learn while
+              creating the website, seeking guidance from my mentor to discuss
+              whether it was possible to code certain elements. This experience
+              deepened my understanding of Front-end developers' work and what
+              is needed to code a prototype.</span
+            >
+          </p>
+          <img src="img/portfolio/portfolio-prototype.png" alt="prototype" />
+        </div>
+        <!-- coding -->
+        <div class="row">
+          <h3>Coding: Create a real website</h3>
+          <p>
+            While coding my website, I found it challenging to remember details
+            like the font I used, font size, margin, or spacing. If I made a
+            design file to explain all of these, this could have saved time to
+            create a coding.
+          </p>
+          <img src="img/portfolio/portfolio-coding.png" alt="coding" />
+        </div>
+        <!-- usertesting -->
+        <div class="row">
+          <h3>User testing: Test with target users</h3>
+          <p>
+            I conducted user testing with 5 people, and they all found it easy
+            to navigate. They liked the use of design elements that showcased my
+            personality and design skills. However, there were suggestions for
+            improvement in their feedback.
+          </p>
+          <img
+            src="img/portfolio/portfolio-usertesting.png"
+            alt="user-testing"
+          />
+          <h3>What I improved:</h3>
+          <p>1. Change a profile picture to look more professional</p>
+          <p>2. Create a Contact Us page to users easily contact me</p>
+          <p>
+            3. Add a result page with intonation so users can easily recognise
+            the improvements and design decisions
+          </p>
+          <p>4. Make the sentences shorter to enhance readability</p>
+          <p>
+            5. Include a category (e.g., App Design, Responsive Web Design,
+            etc.) in the project picture, enabling hiring managers to easily
+            recognise my experience and expertise
+          </p>
+        </div>
+        <hr />
+        <!-- What I learnt & Next steps  -->
+        <div class="row">
+          <h2>What I Learnt 🌱</h2>
+          <p>
+            <b>Coding and Effective Communication with Developers: </b>I learned
+            how to code, and the most crucial lesson was understanding how to
+            communicate effectively with developers. While coding my website, I
+            found it challenging to remember details like the font I used, font
+            size, margin, or spacing. If I made a design file to explain all of
+            these, this could have saved time to create a coding. This
+            experience underscored the importance of preparing a comprehensive
+            handover file for a seamless translation of design into reality.
+          </p>
+
+          <p>
+            <b
+              >What aspects are the most important when it comes to a portfolio:
+            </b>
+          </p>
+          <ul>
+            <li style="list-style: circle;">
+              Explaining Why about my thought process and ensuring it is
+              understandable to anyone
+            </li>
+            <li style="list-style: circle;">Problem-Solving Skills</li>
+            <li style="list-style: circle;">Data Analysis</li>
+            <li style="list-style: circle;">Visual Design</li>
+            <li style="list-style: circle;">Understanding of user-centred design principles</li>
+            <li style="list-style: circle;">Unique personality by using storytelling</li>
+          </ul>
+          <p>
+            Personally, I'm still working on explaining my design process in a
+            way that's easy for anyone to understand and enjoyable to read. I
+            aim to incorporate more visual elements, making it as
+            straightforward and enjoyable as reading a comic book.
+          </p>
+        </div>
+        <div class="row" style="padding-bottom: 0">
+          <h2>Next Steps ⏭️</h2>
+          <p>
+            Develop the portfolio website while actively applying for jobs. If
+            you have any thoughts or feedback about my website, please feel free
+            to send a message via LinkedIn or an email: Choa.linzy@gmail.com
+          </p>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <hr class="hr-contact">
-            <div style="text-align: right;">
-                <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/">Linkedin</a>
-                <a class="contact-list" href="mailto:choa.linzy@gmail.com">Email me</a>
-            </div>
-            <div class="copywright">
-                <p>Copyright Choa Kim 2023</p>
-            </div>
+      <div class="container">
+        <hr class="hr-contact" />
+        <div style="text-align: right">
+          <a class="contact-list" href="https://www.linkedin.com/in/choa-kim/"
+            >Linkedin</a
+          >
+          <a class="contact-list" href="mailto:choa.linzy@gmail.com"
+            >Email me</a
+          >
         </div>
+        <div class="copywright">
+          <p>Copyright Choa Kim 2023</p>
+        </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
